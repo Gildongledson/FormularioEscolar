@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, unitial-scale=1.0">
+  <title>replit</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <header>
+      <h1>Escola de Conhecimentos</h1>
+  </header>
+
+  <main>
+    <div class="title">
+        <h2>Cadastro de alunos</h2>
+        <span>formulário para adicionar informações no sistema.</span>
+      
+    </div>
+    <div class="card">
+      
+      <div class="lineInput">
+          <label>Aluno(a)</label>
+          <input type="text" id= "alunos" placeholder="nome do aluno">
+      </div>
+
+      <div class="lineInput">
+          <label id= "medAtual">Primeira Nota</label>
+          <input type="number" id= "priNota" placeholder="primeira nota">
+      </div>
+
+      <div class="lineInput">
+          <label id= "recp">Segunda Nota</label>
+          <input type="number" id= "segNota" placeholder="segunda nota">
+      </div>  
+      
+        <button onclick="alunos.salvar()"id  = "btn1">Salvar</button>
+        <button onclick="alunos.recuperacao()"id= "btn3" hidden >Lançar</button>
+        <button onclick="alunos.cancelar()">Cancelar</button>
+    </div>
+
+    <div class= "conteudo">
+        <table border="1">
+            <thead>
+                <th class="center">id</th>
+                <th class="center">Aluno(a)</th>
+                <th class="center">Primeira Nota</th>
+                <th class="center">Segunda Nota</th>
+                <th class="center">Média</th>
+                <th class="center">Recuperação</th>
+                <th class="center">Nota Final</th>
+                <th class="center">Ações</th>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+          
+        </table>
+    </div>
+    
+  </main>  
+  <script src="js/script.js"></script>
+  <script src="js/escola.js"></script>
+  <script src="js/aluno.js"></script>
+</body>
+
+</html>
