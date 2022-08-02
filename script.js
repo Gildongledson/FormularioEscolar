@@ -66,17 +66,17 @@ class Alunos{
 
         //icone edit + func botao
         let imgEdit = document.createElement("img");
-        imgEdit.src = "img/edit.png";
+        imgEdit.src = "edit.png";
         imgEdit.setAttribute("onclick", "alunos.lobbydeEdicao("+ JSON.stringify(this.arrayAlunos[i]) +")");
 
         let imgRec = document.createElement("img");
-        imgRec.src = "img/Rec.png";
+        imgRec.src = "Rec.png";
         //***********************teste**************************
         imgRec.setAttribute("onclick", "alunos.menuRecuperacao("+ JSON.stringify(this.arrayAlunos[i]) +")");
                 
         //icone excluir + func botao
         let imgDelete = document.createElement("img");
-        imgDelete.src = "img/delete.png";
+        imgDelete.src = "delete.png";
         imgDelete.setAttribute("onclick", "alunos.apagar("+ this.arrayAlunos[i].id +")");
 
         //a imagem vira um galho na arvore => acoes
